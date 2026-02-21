@@ -131,9 +131,9 @@ html, body {
 
 .version-label {
   margin-top: 1rem;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   letter-spacing: 0.15em;
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(167, 139, 250, 0.6);
 }
 
 /* ── HUD ── */

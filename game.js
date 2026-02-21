@@ -1,6 +1,6 @@
 'use strict';
 
-const VERSION = 'v1.0.1';
+const VERSION = 'v1.0.2';
 
 // ── Canvas Setup ────────────────────────────────────────────────────────────
 const canvas = document.getElementById('gameCanvas');
