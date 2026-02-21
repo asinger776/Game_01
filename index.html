@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#0f0f1a" />
+  <title>Bounce!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+
+  <!-- Screens -->
+  <div id="startScreen" class="screen active">
+    <div class="screen-content">
+      <h1 class="title">BOUNCE!</h1>
+      <p class="subtitle">Keep the ball alive</p>
+      <div class="instructions">
+        <p>Drag the paddle to deflect the ball</p>
+        <p>Don't let it hit the bottom!</p>
+      </div>
+      <button id="startBtn" class="btn">TAP TO PLAY</button>
+    </div>
+  </div>
+
+  <div id="gameOverScreen" class="screen">
+    <div class="screen-content">
+      <h2 class="title">GAME OVER</h2>
+      <p class="result-label">Score</p>
+      <p id="finalScore" class="final-score">0</p>
+      <p class="result-label">Best</p>
+      <p id="bestScore" class="best-score">0</p>
+      <button id="restartBtn" class="btn">PLAY AGAIN</button>
+    </div>
+  </div>
+
+  <!-- HUD -->
+  <div id="hud" class="hud hidden">
+    <div class="hud-left">
+      <span class="hud-label">SCORE</span>
+      <span id="scoreDisplay" class="hud-value">0</span>
+    </div>
+    <div class="hud-right">
+      <span id="livesDisplay" class="lives">♥ ♥ ♥</span>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
