@@ -44,8 +44,13 @@ const scoreDisplay   = document.getElementById('scoreDisplay');
 const livesDisplay   = document.getElementById('livesDisplay');
 const finalScoreEl   = document.getElementById('finalScore');
 const bestScoreEl    = document.getElementById('bestScore');
-document.getElementById('startBtn').addEventListener('click', startGame);
-document.getElementById('restartBtn').addEventListener('click', startGame);
+function addButtonHandler(id, fn) {
+  const el = document.getElementById(id);
+  el.addEventListener('click', fn);
+  el.addEventListener('touchend', function(e) { e.preventDefault(); fn(); });
+}
+addButtonHandler('startBtn', startGame);
+addButtonHandler('restartBtn', startGame);
 
 // ── Paddle ───────────────────────────────────────────────────────────────────
 const paddleBottomOffset = 60;

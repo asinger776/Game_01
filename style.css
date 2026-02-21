@@ -121,6 +121,7 @@ html, body {
   transition: transform 0.12s ease, box-shadow 0.12s ease;
   -webkit-appearance: none;
   appearance: none;
+  touch-action: manipulation;
 }
 
 .btn:active {
