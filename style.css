@@ -129,6 +129,13 @@ html, body {
   box-shadow: 0 2px 12px rgba(124, 58, 237, 0.35);
 }
 
+.version-label {
+  margin-top: 1rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.25);
+}
+
 /* ── HUD ── */
 .hud {
   position: fixed;

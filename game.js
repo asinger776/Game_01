@@ -1,5 +1,7 @@
 'use strict';
 
+const VERSION = 'v1.0.1';
+
 // ── Canvas Setup ────────────────────────────────────────────────────────────
 const canvas = document.getElementById('gameCanvas');
 const ctx    = canvas.getContext('2d');
@@ -44,6 +46,8 @@ const scoreDisplay   = document.getElementById('scoreDisplay');
 const livesDisplay   = document.getElementById('livesDisplay');
 const finalScoreEl   = document.getElementById('finalScore');
 const bestScoreEl    = document.getElementById('bestScore');
+document.getElementById('versionDisplay').textContent = VERSION;
+
 function addButtonHandler(id, fn) {
   const el = document.getElementById(id);
   el.addEventListener('click', fn);
